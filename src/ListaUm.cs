@@ -4,8 +4,10 @@ namespace cs
 {
     public class ListaUm
     {
-         static void Main(string[] args)
+        public static void Call()
         {
+            int menu = 0;
+            do{
             Console.WriteLine("Listagem de exercícios em C#");
             Console.WriteLine("0 - Sair do programa");
             Console.WriteLine("1 - Calcule a Média");
@@ -19,10 +21,8 @@ namespace cs
             Console.WriteLine("9 - Comparando dois strings");
             Console.WriteLine("10 - Variável com ponto em string e conversão para inteiro");
             Console.WriteLine("11 - Recebendo o salário e mostrando o valor de imposto de renda");
-            
-            int menu = 0;
-            do{
-              menu = Int32.Parse(Console.ReadLine());
+          
+            menu = Int32.Parse(Console.ReadLine());
                 switch(menu)
                 {
                     case 0:
@@ -133,7 +133,7 @@ namespace cs
                 }
 
                 // calcular velocidade
-                public static void calcularVelocidade(){
+                    public static void calcularVelocidade(){
                     double distancia = 500;
                     double tempo = 2;
 
@@ -141,7 +141,7 @@ namespace cs
                 }
 
                 // calcular volume
-                public static void calcularVolume(){
+                    public static void calcularVolume(){
                     double largura = 20;
                     double altura = 12;
                     double profundidade = 9;
@@ -152,7 +152,7 @@ namespace cs
                 }
 
                 // teste Par ou Ímpar
-                public static void testeParImpar(){
+                    public static void testeParImpar(){
                     int x;
                     Console.Write("Informe um número: ");
                     x = int.Parse(Console.ReadLine());
@@ -168,49 +168,49 @@ namespace cs
                 }
 
 
-                // comparação de strings
-                public static void compString(){
-                    string str1 = "banana";
-                    string str2 = "banana";
+                    // comparação de strings
+                    public static void compString(){
+                        string str1 = "banana";
+                        string str2 = "banana";
 
-                if(string.Compare(str1, str2) == 0){
-                    Console.WriteLine("Estas strings são iguais");
-                }
-                else{
-                    Console.WriteLine("Estas strings são diferentes");
-                    }                    
-                }
-
-                // ponto em string
-                public static void pontoemString(){
-                    string input = String.Empty;
-
-                    if (Int32.TryParse("-105", out int j))
-                    {
-                        Console.WriteLine(j);
-                    }else{
-                        Console.WriteLine("String could not be parsed.");
-                    }
-                }
-
-                // valor maior que o dobro
-                public static void maiorqueoDobro(){
-                    double v1 = 10;
-                    double v2 = 25;
-
-                    if (v1>=v2*2)
-                    {
-                        Console.WriteLine($"\n Este valor é maior que o dobro");
+                    if(string.Compare(str1, str2) == 0){
+                        Console.WriteLine("Estas strings são iguais");
                     }
                     else{
-                        Console.WriteLine("Este valor não é maior que o dobro");
+                        Console.WriteLine("Estas strings são diferentes");
+                        }                    
                     }
-                } 
 
-                // imposto do salário
-                public static void mostrarImposto(){
-                    
-                } 
+                    // ponto em string
+                    public static void pontoemString(){
+                        string input = String.Empty;
+
+                        if (Int32.TryParse("-105", out int j))
+                        {
+                            Console.WriteLine(j);
+                        }else{
+                            Console.WriteLine("String could not be parsed.");
+                        }
+                    }
+
+                    // valor maior que o dobro
+                    public static void maiorqueoDobro(){
+                        double v1 = 10;
+                        double v2 = 25;
+
+                        if (v1>=v2*2)
+                        {
+                            Console.WriteLine($"\n Este valor é maior que o dobro");
+                        }
+                        else{
+                            Console.WriteLine("Este valor não é maior que o dobro");
+                        }
+                    } 
+
+                    // imposto do salário
+                    public static void mostrarImposto(){
+                        
+                    } 
     }
 }
 
