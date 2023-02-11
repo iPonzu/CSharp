@@ -22,7 +22,7 @@ namespace cs
             Console.WriteLine("10 - Variável com ponto em string e conversão para inteiro");
             Console.WriteLine("11 - Recebendo o salário e mostrando o valor de imposto de renda");
           
-            menu = Int32.Parse(Console.ReadLine());
+                menu = Int32.Parse(Console.ReadLine());
                 switch(menu)
                 {
                     case 0:

@@ -5,7 +5,7 @@ namespace App;
 
     class App
     {
-        static void Main (string[] args)
+     static void Main (string[] args)
         {
             int menu = 0;
             do
@@ -30,13 +30,17 @@ namespace App;
                     ListaTres.Call();
                     break;
                 case 4:
+                    ListaQuatro.Call();
                     break;
                 case 5: 
+                    ListaCinco.Call();
                     break;
                 case 6:
+                    ListaSeis.Call();
                     break;
                                     
                 }
             } while (menu != 0);
         }
     }
+    

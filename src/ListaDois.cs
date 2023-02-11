@@ -11,13 +11,13 @@ public class ListaDois
         do{
             Console.WriteLine("1 - Calcular médias e aprovação");
             Console.WriteLine("2 - Insira um número e descubra a que mês ele representa");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("3 - Jogo da forca");
+            Console.WriteLine("4 - Tabuada de 0 a 10");
+            Console.WriteLine("5 - String onde imprime linha a linha cada letra");
+            Console.WriteLine("6 - Soma de números ímpares e múltiplos de 7 entre 1 a 100");
+            Console.WriteLine("7 - Receber notas de aluno e encerrar quando receber alguma negativa");
+            Console.WriteLine("8 - Receber valor e imprimir seu fatorial");
+            Console.WriteLine("9 - Cálculo de IMC");
 
        
             menu = Int32.Parse(Console.ReadLine());
@@ -33,6 +33,13 @@ public class ListaDois
                         Console.WriteLine("" + notas);
                         break;   
                     case 2:
+                        try{
+                        Console.WriteLine("Insira um número de 1 à 12: ");
+                        int numeroMes = int.Parse(Console.ReadLine());
+                        int qualMes = int.Parse(Console.ReadLine());
+                        }catch{
+                            Console.WriteLine("..");
+                        }
                         break; 
                     case 3:
                         break;
@@ -74,5 +81,9 @@ public class ListaDois
                 }
 
             }
+
+           /* public static String numeroMes(int mes){
+                
+            }*/
 
 }
