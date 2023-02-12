@@ -16,6 +16,7 @@ namespace App;
                 Console.WriteLine("4 - Lista 4");
                 Console.WriteLine("5 - Lista 5");
                 Console.WriteLine("6 - Lista 6");
+                Console.WriteLine("7 - Sair");
 
                 menu = Int32.Parse(Console.ReadLine());
                 switch(menu)
@@ -38,7 +39,9 @@ namespace App;
                 case 6:
                     ListaSeis.Call();
                     break;
-                                    
+                case 7:
+                    Console.WriteLine("Até mais!");    
+                    break;                
                 }
             } while (menu != 0);
         }
