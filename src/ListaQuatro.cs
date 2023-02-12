@@ -9,11 +9,11 @@ namespace cs{
             int menu = 0;
             do
             {
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
 
                 menu = Int32.Parse(Console.ReadLine());
                 switch (menu)

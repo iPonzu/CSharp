@@ -17,7 +17,7 @@ namespace App;
                 Console.WriteLine("5 - Lista 5");
                 Console.WriteLine("6 - Lista 6");
 
-            menu = Int32.Parse(Console.ReadLine());
+                menu = Int32.Parse(Console.ReadLine());
                 switch(menu)
                 {
                 case 1:
